@@ -50,15 +50,19 @@ Podemos controlar nuestra secuencia de imágenes mediante uno de los siguientes 
 
 ```javascript
 
-//Inicializa la video secuencia y comienza la carga de ficheros. Cuando se han cargado el numero de ficheros marcados por la propiedad filesToBuffer comienza la reproducción de la secuencia.
+//Inicializa la video secuencia y comienza la carga de ficheros.Cuando se han cargado
+//el numero de ficheros marcados por la propiedad filesToBuffer comienza la reproducción de la secuencia.
 miSecuencia.init()
 
 
-//Detiene la carga de ficheros de imágenes. Si posteriormente se necesita utilizar la video secuencia habría que volver a inicializarla con el método init().
+//Detiene la carga de ficheros de imágenes. Si posteriormente se necesita utilizar
+//la video secuencia habría que volver a inicializarla con el método init().
 miSecuencia.stopBuffering()
 
 
-//Comienza la reproducción de la secuencia. Este metodo fuerza a la secuencia a mostrarse incluso si no se han cargado el número de ficheros marcados por la propiedad filesToBuffer, sólo se recomienda su uso cuando estamos seguros de tener nuestras imágenes disponibles.
+//Comienza la reproducción de la secuencia. Este metodo fuerza a la secuencia a mostrarse
+//incluso si no se han cargado el número de ficheros marcados por la propiedad filesToBuffer,
+//sólo se recomienda su uso cuando estamos seguros de tener nuestras imágenes disponibles.
 miSecuencia.startSequence()
 
 
