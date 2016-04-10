@@ -22,6 +22,23 @@ var miSecuencia = new videoSequence({ secondsNum:30,
                                                     "/assets/images06.js"]
                                       });
 ```
+Este script permite ejecutar funciones en los quartiles de reproducción. Este es el listado de parámetros que podemos utilizar al crear la instancia.
+
+| Nombre | Descripción |
+| --- | --- |
+| secondsNum | Duración de la secuencia. |
+| imageNum | Número total de imágenes de la secuencia. |
+| filesToBuffer | Número de ficheros a cargar antes de comenzar la reproducción. |
+| filesPath |	Array con las rutas relativas a los ficheros de imágenes. |
+| onBufferStart | Función que se ejecutará cuando comience la carga de ficheros. |
+| onBufferComplete | Función que se ejecutará cuando se hayan cargado todos los ficheros. |
+| onSequenceStart | Función que se ejecutará cuando comience la reproducción de la secuencia. |
+| onSequence25 | Función que se ejecutará en el 25% de la reproducción. |
+| onSequence50 | Función que se ejecutará en el 50% de la reproducción. |
+| onSequence75 | Función que se ejecutará en el 75% de la reproducción. |
+| onSequenceComplete | Función que se ejecutará en el 100% de la reproducción. |
+| onSequencePlay | Función que se ejecutará cuando comience la reproducción de la secuencia. |
+| onSequenceStop | Función que se ejecutará cuando se detenga la secuencia. |
 
 Ya tenemos nuestra instancia lista para inicializarse. 
 
@@ -29,7 +46,7 @@ Ya tenemos nuestra instancia lista para inicializarse.
 miSecuencia.init();
 ```
 
-Ya podemos controlar nuestra secuencia de imágenes mediante uno de los siguientes métodos:
+Podemos controlar nuestra secuencia de imágenes mediante uno de los siguientes métodos:
 
 ```javascript
 
@@ -54,24 +71,3 @@ miSecuencia.stopSequence()
 
 
 ```
-
-
-Este script permite ejecutar funciones en los quartiles de reproducción. Este es el listado de parámetros que podemos utilizar al crear la instancia.
-
-secondsNum : Duración de la secuencia.
-imageNum : Número total de imágenes de la secuencia.
-filesToBuffer : Número de ficheros a cargar antes de comenzar la reproducción.
-filesPath :	Array con las rutas relativas a los ficheros de imágenes.
-onBufferStart : Función que se ejecutará cuando comience la carga de ficheros.
-onBufferComplete : Función que se ejecutará cuando se hayan cargado todos los ficheros.
-onSequenceStart : Función que se ejecutará cuando comience la reproducción de la secuencia.
-onSequence25 : Función que se ejecutará en el 25% de la reproducción.
-onSequence50 : Función que se ejecutará en el 50% de la reproducción.
-onSequence75 : Función que se ejecutará en el 75% de la reproducción.
-onSequenceComplete : Función que se ejecutará en el 100% de la reproducción.
-onSequencePlay : Función que se ejecutará cuando comience la reproducción de la secuencia.
-onSequenceStop : Función que se ejecutará cuando se detenga la secuencia.
-
-
-
-
